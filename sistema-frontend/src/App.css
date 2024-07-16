@@ -1,0 +1,178 @@
+/*
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+*/
+
+.ingreso {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 8%;
+}
+
+.contenedor {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.center {
+  text-align: center;
+}
+
+.botones-principales {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.left {
+  float: left !important;
+}
+
+.imagen {
+  height: 100px;
+  width: 100px;
+}
+
+/**/
+
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  /*height: auto;*/
+  height: 500px;
+  /*max-height: 80vh;*/
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+  /*max-height: 100vh;*/
+  width:100%;
+  height: 100%;
+}
+
+.video-wrapper {
+  position: relative;
+  padding: 33.35% 0; /* 16:9 */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.play-button {
+  cursor: pointer;
+  position: absolute;
+  border: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 60px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 0, 0);
+}
+
+.play-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16.5px;
+  left: 40px;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 12.5px 0 12.5px 20px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+}
+
+.close-video::before {
+  content: "✕";
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  font-size: 30px;
+  padding: 20px;
+  z-index: 1;
+  line-height: 0.7;
+  display: block;
+  text-shadow: 0 2px 2px #1a1a1a;
+  color: #fff;
+}
+
+.datos-tabla {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.navbar-right {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+th {
+  font-weight: 900 !important;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
