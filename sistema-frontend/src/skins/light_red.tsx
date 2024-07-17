@@ -5,7 +5,7 @@ const { palette } = createTheme();
 export const theme = createTheme({
   typography: {
     "fontFamily": `"Roboto", "Helvetica", "Arial", sans-serif`,
-    "fontSize": 15,
+    "fontSize": 18,
     "fontWeightLight": 300,
     "fontWeightRegular": 700,
     "fontWeightMedium": 500

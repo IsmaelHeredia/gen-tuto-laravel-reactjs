@@ -111,7 +111,7 @@ const DatosCancion = () => {
                 maxWidth="sm"
             >
                 <DialogTitle>
-                    <Typography fontSize={30}>Datos</Typography>
+                    <Typography variant="h4">Datos</Typography>
                 </DialogTitle>
                 <DialogContent style={{ paddingTop: 10 }}>
                     <Typography sx={{ mb: 1 }}>Nombre : {cancion.nombre}</Typography>

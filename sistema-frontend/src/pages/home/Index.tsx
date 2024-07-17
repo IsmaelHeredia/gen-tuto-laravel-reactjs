@@ -88,7 +88,7 @@ const Home = () => {
         
         setOpen(true);
 
-        cleanErrorsCancion()
+        cleanErrorsCancion();
 
         setValueCancion("id", null);
         setValueCancion("nombre", "");
@@ -306,6 +306,8 @@ const Home = () => {
     }
 
     const handleEditCancion = (id: number) => {
+
+        cleanErrorsCancion();
 
         axios
         .get(import.meta.env.VITE_API_URL + "/canciones/" + id)
@@ -572,7 +574,7 @@ const Home = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography fontSize={30}>Canción</Typography>
+                    <Typography variant="h4">Canción</Typography>
                 </DialogTitle>
                 <form onSubmit={handleSubmitCancion(handleClickGuardarCancion)} noValidate>
                     <DialogContent style={{ paddingTop: 10 }}>
@@ -723,7 +725,7 @@ const Home = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography fontSize={30}>Confirmación</Typography>
+                    <Typography variant="h4">Confirmación</Typography>
                 </DialogTitle>
                 <DialogContent style={{ paddingTop: 10 }}>
                 <Typography>Desea borrar la canción { confirmDeleteCancionNombre } ?</Typography>

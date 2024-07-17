@@ -321,6 +321,8 @@ const ListarCapturas = () => {
 
     const handleEditCaptura = (id: number) => {
 
+        cleanErrorsCaptura();
+
         axios
         .get(import.meta.env.VITE_API_URL + "/capturas/" + id)
         .then(response => {
@@ -631,7 +633,7 @@ const ListarCapturas = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography fontSize={30}>Captura</Typography>
+                    <Typography variant="h4">Captura</Typography>
                 </DialogTitle>
                 <form onSubmit={handleSubmitCaptura(handleClickGuardarCaptura)} noValidate>
                     <DialogContent style={{ paddingTop: 10 }}>
@@ -707,7 +709,7 @@ const ListarCapturas = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography fontSize={30}>Confirmación</Typography>
+                    <Typography variant="h4">Confirmación</Typography>
                 </DialogTitle>
                 <DialogContent style={{ paddingTop: 10 }}>
                 <Typography>Desea borrar la captura { confirmDeleteCapturaNombre } ?</Typography>
@@ -740,7 +742,7 @@ const ListarCapturas = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography fontSize={30}>Ordenar capturas</Typography>
+                    <Typography variant="h4">Ordenar capturas</Typography>
                 </DialogTitle>
                 <DialogContent style={{ paddingTop: 10 }}>
                     <TableContainer>
