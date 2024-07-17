@@ -100,7 +100,7 @@ const Chart = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography variant="h4">Cantidad de canciones por género</Typography>
+                    <Typography variant="h4" component="div">Cantidad de canciones por género</Typography>
                 </DialogTitle>
                 <DialogContent>
                     <div style={{ display:"flex", justifyContent:"center", alignItems:"center" }} className="grafico">

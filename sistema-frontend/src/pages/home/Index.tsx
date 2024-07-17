@@ -574,7 +574,7 @@ const Home = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography variant="h4">Canción</Typography>
+                    <Typography variant="h4" component="div">Canción</Typography>
                 </DialogTitle>
                 <form onSubmit={handleSubmitCancion(handleClickGuardarCancion)} noValidate>
                     <DialogContent style={{ paddingTop: 10 }}>
@@ -725,7 +725,7 @@ const Home = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography variant="h4">Confirmación</Typography>
+                    <Typography variant="h4" component="div">Confirmación</Typography>
                 </DialogTitle>
                 <DialogContent style={{ paddingTop: 10 }}>
                 <Typography>Desea borrar la canción { confirmDeleteCancionNombre } ?</Typography>

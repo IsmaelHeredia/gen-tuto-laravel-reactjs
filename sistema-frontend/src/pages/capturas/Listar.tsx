@@ -633,7 +633,7 @@ const ListarCapturas = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography variant="h4">Captura</Typography>
+                    <Typography variant="h4" component="div">Captura</Typography>
                 </DialogTitle>
                 <form onSubmit={handleSubmitCaptura(handleClickGuardarCaptura)} noValidate>
                     <DialogContent style={{ paddingTop: 10 }}>
@@ -709,7 +709,7 @@ const ListarCapturas = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography variant="h4">Confirmación</Typography>
+                    <Typography variant="h4" component="div">Confirmación</Typography>
                 </DialogTitle>
                 <DialogContent style={{ paddingTop: 10 }}>
                 <Typography>Desea borrar la captura { confirmDeleteCapturaNombre } ?</Typography>
@@ -742,7 +742,7 @@ const ListarCapturas = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography variant="h4">Ordenar capturas</Typography>
+                    <Typography variant="h4" component="div">Orden de capturas</Typography>
                 </DialogTitle>
                 <DialogContent style={{ paddingTop: 10 }}>
                     <TableContainer>

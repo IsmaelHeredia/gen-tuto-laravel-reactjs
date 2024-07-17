@@ -32,7 +32,7 @@ const LayoutAdmin = ({ children }: { children: React.ReactNode }) => {
 
     const handleClickLogOut = () => {
 
-        toast.success("La sesion fue cerrada", {autoClose: Number(import.meta.env.VITE_TIMEOUT_TOAST)});
+        toast.success("La sesión fue cerrada", {autoClose: Number(import.meta.env.VITE_TIMEOUT_TOAST)});
     
         sessionStorage.setItem(import.meta.env.VITE_SESSION_NAME, "");
 

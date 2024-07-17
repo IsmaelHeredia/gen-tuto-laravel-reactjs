@@ -148,7 +148,7 @@ const Account = () => {
                 disableEscapeKeyDown
             >
                 <DialogTitle>
-                    <Typography variant="h4">Cuenta</Typography>
+                    <Typography variant="h4" component="div">Cuenta</Typography>
                 </DialogTitle>
                 <form onSubmit={handleSubmitCuenta(handleClickActualizarCuenta)} noValidate>
                     <DialogContent style={{ paddingTop: 10 }}>

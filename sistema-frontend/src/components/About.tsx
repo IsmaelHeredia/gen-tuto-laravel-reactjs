@@ -53,7 +53,7 @@ const About = () => {
                 maxWidth="sm"
             >
                 <DialogTitle>
-                    <Typography variant="h4">About</Typography>
+                    <Typography variant="h4" component="div">About</Typography>
                 </DialogTitle>
                 <DialogContent>
                     <Typography sx={{ mb:1 }}>Nombre : Generador de tutoriales</Typography>
